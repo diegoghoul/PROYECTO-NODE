@@ -23,8 +23,8 @@ Movies API es un proyecto construido con Node.js que permite gestionar una base 
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/movies-api.git
-   cd movies-api
+   git clone https://github.com/diegoghoul/PROYECTO-NODE.git
+   cd PROOYECTO_NODE
    ```
 
 2. Instala las dependencias:
