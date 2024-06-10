@@ -1,0 +1,36 @@
+### Obtener todas las peliculas
+GET http://localhost:3000/movies
+
+### Obtener pelicula por id
+GET http://localhost:3000/movies/fb2d1832-2477-11ef-b3e8-a434d9b97a1c
+
+### Obtener peliculas por generos
+GET http://localhost:3000/movies?genre=SCI-FI
+
+### Crear nueva pelicula
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Inception",
+  "year": 2011,
+  "director": "Christopher Nolan",
+  "duration": 148,
+  "poster": "https://m.media-amazon.com/images/I/912AErFSBHL._AC_UF894,1000_QL80_.jpg",
+  "genre": ["Action", "Sci-Fi"],
+  "rate": 8.8
+}
+
+### Actualizar pelicula
+
+PATCH http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+  "title": "El señor de la noche xd",
+  "rate": 10
+}
+
+### Elimina una pelicula
+DELETE  http://localhost:3000/movies/59a59a35-2617-11ef-8d23-a434d9b97a1c
+
