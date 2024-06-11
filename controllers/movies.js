@@ -37,12 +37,12 @@ export class MovieControllers {
     const { id } = req.params
     const result = validateMoviePartial(req.body)
     if (result.error) {
-      return res.statusCode(400).send({ error: JSON.parse(result.error) })
+      return res.status(400).send({ error: JSON.parse(result.error) })
     }
 
     const statusPatch = await this.movieModel.update({ id, input: result.data })
     if (!statusPatch) {
-      return res.statusCode(404).send({ error: 'MOVIE NOT FOUND' })
+      return res.status(404).send({ error: 'MOVIE NOT FOUND' })
     }
 
     return res.status(201).json(statusPatch)

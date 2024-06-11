@@ -23,14 +23,15 @@ Content-Type: application/json
 
 ### Actualizar pelicula
 
-PATCH http://localhost:3000/movies/
+PATCH http://localhost:3000/movies/18f015b5-2787-11ef-8f13-a434d9b97a1c
 Content-Type: application/json
 
 {
   "title": "El señor de la noche xd",
-  "rate": 10
+  "rate": 9.9,
+  "genre": ["Action", "Sci-Fi", "Romance"]
 }
 
 ### Elimina una pelicula
-DELETE  http://localhost:3000/movies/59a59a35-2617-11ef-8d23-a434d9b97a1c
+DELETE  http://localhost:3000/movies/86b31e18-277d-11ef-8f13-a434d9b97a1c
 
