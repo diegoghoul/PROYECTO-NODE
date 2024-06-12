@@ -2,10 +2,13 @@
 GET http://localhost:3000/movies
 
 ### Obtener pelicula por id
-GET http://localhost:3000/movies/fb2d1832-2477-11ef-b3e8-a434d9b97a1c
+GET http://localhost:3000/movies/6668ed55db5f9eb1793db66b
+# 6668cf61e77b31226170f07d
+# fb2d1832-2477-11ef-b3e8-a434d9b97a1c 
+
 
 ### Obtener peliculas por generos
-GET http://localhost:3000/movies?genre=SCI-FI
+GET http://localhost:3000/movies?genre=adventure
 
 ### Crear nueva pelicula
 POST http://localhost:3000/movies
@@ -23,15 +26,15 @@ Content-Type: application/json
 
 ### Actualizar pelicula
 
-PATCH http://localhost:3000/movies/18f015b5-2787-11ef-8f13-a434d9b97a1c
+PATCH http://localhost:3000/movies/66690417c9b2671dbe5cf798
 Content-Type: application/json
 
 {
-  "title": "El señor de la noche xd",
+  "title": "El señor de la noche",
   "rate": 9.9,
   "genre": ["Action", "Sci-Fi", "Romance"]
 }
 
 ### Elimina una pelicula
-DELETE  http://localhost:3000/movies/86b31e18-277d-11ef-8f13-a434d9b97a1c
+DELETE  http://localhost:3000/movies/66690417c9b2671dbe5cf798
 
